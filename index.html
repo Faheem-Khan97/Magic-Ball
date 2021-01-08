@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&amp;display=swap" rel="stylesheet">
+
+    
+    <title>Task</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .full{
+            text-align: center;
+            margin: 0px;
+            padding: 2vh 0px;
+            height: 100vh;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            font-family: 'Roboto Mono', monospace;
+        }
+        h1.head{
+
+            color: white;
+            word-spacing: 5px;
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+        button#enter{
+            padding: 6px 14px;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+
+        }
+        
+        button#fortune{
+            padding: 6px 14px;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+            height: 8vh;
+            width: 35%;
+            justify-self: center;
+            align-self: center;
+            display: none;
+            box-shadow: 1px 1px 10px 2px rgb(255, 255, 255);
+
+        }
+        
+        
+        input{
+            border: 1px solid white;
+            border-radius: 5px;
+            height: 64px;
+            width: 38%;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            color: white;
+            font-size: 28px;
+            padding: 2px 4px;
+
+        }
+        form#home{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 10vh;
+         
+         
+        }
+        div.img{
+            margin-top: 8vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        div.img> img{
+            height: 65vh;
+        }
+        p.msg{
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            grid-column: 1/3;
+            display: none;
+        }
+      
+        
+    </style>
+</head>
+<body>
+
+    <section class="full">
+       
+        <h1 class="head">
+                ENTER YOUR NAME
+        </h1>
+
+        <form action="" id="home">
+            <input type="text" id="name">
+            <button type="submit" id="enter">Enter</button>
+        </form>
+
+
+        <div class="img">
+            <p class="msg">HOW ARE YOU</p>
+
+            <img src="./8ball.png" alt="" srcset="">
+
+            <button id="fortune">
+                Know your Fortune
+            </button>
+        </div>
+    </section>
+    <script src="./index.js" defer></script>
+</body>
+</html>

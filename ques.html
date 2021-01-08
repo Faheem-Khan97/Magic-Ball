@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+
+    <style>
+
+        *{
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .full{
+            text-align: center;
+            margin: 0px;
+            padding: 2vh 0px;
+            height: 100vh;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            font-family: 'Roboto Mono', monospace;
+        }
+        .full h1{
+
+            color: white;
+            word-spacing: 5px;
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+
+    div.img{
+            margin-top: 8vh;
+
+            display: grid;
+            grid-template-columns: 4fr 5fr;
+        }
+        div.img> img{
+            height: 62vh;
+        }
+
+
+        @keyframes example {
+            0%{
+                left: 0%;
+                top: 0%;
+            }
+            25%{
+                left: 3px;
+                top: 5px;
+            }
+            50%{
+
+                top: 3px;
+                right:2px;
+            }
+            75%{
+
+                right: 8px;
+                top: 4px;
+            }
+            100%{
+
+                right: 0%;
+                top: 0%;
+            }
+
+           
+
+}
+
+
+
+
+        img.transit {
+           
+            position: relative;
+            animation-name: example;
+            animation-duration: 0.3s;
+            animation-fill-mode: backwards;
+            animation-iteration-count: 4;
+
+        }
+
+        input{
+            border: 1px solid white;
+            border-radius: 5px;
+            height: 64px;
+            width: 38%;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            color: white;
+            font-size: 28px;
+            padding: 2px 4px;
+
+        }
+        button#newenter{
+            padding: 6px 14px;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+         
+
+        }
+        button#again{
+            padding: 6px 14px;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+       
+
+        }
+        button#reset{
+            padding: 6px 14px;
+            background-image: linear-gradient(to right, skyblue , seagreen );
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+       
+
+        }
+
+        li.liItem{
+
+            color: white;
+            font-weight: bold;
+            margin: 2px 0px;
+            padding: 1vh 0px;
+            cursor: pointer;
+        }
+
+        a.actualink{
+
+            text-decoration: none;
+            color: white;
+            margin: 2px 0px;
+        }
+        ul.qList{
+
+            text-align: left;
+        }
+        .listWrap{
+
+            text-align: left;
+        
+        }
+        .listWrap p{
+
+            padding: 3vh 0px;
+            color: white;
+            font-weight: bold;
+
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="full">
+        <h1 class="head">Ask Your Question Mr.</h1>
+
+
+        <form action="" id="home">
+
+            <input type="text" id="ques">
+            <button type="submit" id="newenter" >Enter</button>
+            <button  id="again">Try Again</button>
+            <button type="reset" id="reset">Reset</button>
+
+        </form>
+
+
+         
+        <div class="img">
+     
+            <img src="./8ball.png" alt="" srcset="" class="">
+
+         <div class="listWrap">
+             <p>Click one of the below questions to know answer</p>
+             <ul class="qList">
+                 <li class="liItem" onclick="showMsg()">
+       
+                        Will I win the lottery in 2021?
+
+                <li class="liItem" onclick="showMsg()">    
+                
+                        Will Donald Trump be our next President?
+                
+                </li>
+
+                <li class="liItem" onclick="showMsg()">  
+     
+                        Will we get more snow this year than last year?
+
+                </li>
+
+                <li class="liItem" onclick="showMsg()">  
+     
+                        Should I order pizza tonight?
+
+
+                </li>
+
+                <li class="liItem" onclick="showMsg()">  
+
+                        Well, should I cook dinner instead?
+ 
+                </li>
+
+                <li class="liItem" onclick="showMsg()">  
+          
+                        Should we do this again?
+
+                </li>
+
+                <li class="liItem" onclick="showMsg()">  
+
+                        Should I skip my surgery and go on vacations?
+      
+                </li>
+                <li class="liItem" onclick="showMsg()">  
+                   Will I be millionare in 2021?
+                 </li>
+             </ul>
+         </div>
+
+    </main>
+
+
+    <script src="./ques.js" defer></script>
+</body>
+</html>
